@@ -1,28 +1,34 @@
 import React from "react";
 import Button from "./ui/Button";
 import Image from "next/image";
+import Container from "./ui/Container";
 
 const Hero = () => {
   return (
     <section>
-      <div className="flex flex-col items-center justify-center h-[calc(100svh-104px)] relative">
-        <h1 className="text-7xl uppercase font-black text-center">
-          Ensambla, mejora, innova.
-        </h1>
-        <p className="text-center my-4 font-medium text-xl max-w-2xl">
-          Convierte tu idea en un proyecto real con Forge Labs, la plataforma
-          que te ayuda a construir tu PC personalizada con los mejores
-          componentes del mercado.
-        </p>
-        <Button href={"#"} text={"Comenzar"} type="button" />
+      <Container
+        className={"flex text-white items-center h-[calc(100svh-104px)]"}
+      >
         <Image
-          src="/assets/hero_img.png"
-          width={1580}
-          height={400}
-          alt="Personajes trabajando con componentes de PC"
-          className="absolute bottom-0 w-full object-cover -z-10"
+          src={"/assets/hero_img.png"}
+          width={1461}
+          height={1307}
+          className="opacity-55 -z-10 max-w-[60vw] absolute top-0 right-0"
+          alt=""
         />
-      </div>
+        <div className="flex flex-col gap-2 items-start">
+          <h1 className="text-[9rem] leading-[6.8rem] -mt-12 uppercase font-black">
+            Forge <span className="block">Labs</span>
+          </h1>
+          <p className="my-4 font-medium text-2xl max-w-xl">
+            Explora, compara y ensambla con las mejores herramientas y
+            tecnología de última generación.
+          </p>
+          <div className="text-black">
+            <Button size="xl" href={"#"} text={"Comenzar"} type="button" />
+          </div>
+        </div>
+      </Container>
     </section>
   );
 };

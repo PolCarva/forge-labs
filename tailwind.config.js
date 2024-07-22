@@ -13,7 +13,7 @@ module.exports = {
           hover: "#7adb07",
         },
         black: {
-          DEFAULT: "#263238"
+          DEFAULT: "#060B0E"
         },
       },
     },
