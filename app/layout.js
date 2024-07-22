@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Forge Labs - Construye tu PC a medida",
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={""}>
         <Header />
         {children}
+        <Footer/>  
       </body>
     </html>
   );

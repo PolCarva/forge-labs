@@ -15,6 +15,9 @@ module.exports = {
         black: {
           DEFAULT: "#060B0E"
         },
+        tertiary: {
+          DEFAULT: "#1D1642"
+        }
       },
     },
   },

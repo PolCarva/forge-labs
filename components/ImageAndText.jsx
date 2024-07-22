@@ -1,10 +1,11 @@
 import React from "react";
-import Container from "./Container";
+import Container from "./ui/Container";
 import Image from "next/image";
+import HeadingTwo from "./ui/HeadingTwo";
 
 const ImageAndText = () => {
   return (
-    <section className="bg-white h-[80vh]">
+    <section className="bg-white text-black  h-[80vh]">
       <Container className="flex h-full justify-between gap-40 items-center">
         <Image
           src={"/assets/working_man.png"}
@@ -13,7 +14,7 @@ const ImageAndText = () => {
           alt="Working Man"
         />
         <div className="max-w-lg">
-          <h2 className="text-black font-bold text-6xl">Lorem Ipsum Dolor sit amet.</h2>
+          <HeadingTwo>Lorem Ipsum Dolor sit amet.</HeadingTwo>
           <p className="text-2xl mt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi tempor
             consectetur adipiscing elit morbi tempor.

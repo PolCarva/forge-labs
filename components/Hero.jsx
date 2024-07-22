@@ -25,7 +25,7 @@ const Hero = () => {
             tecnología de última generación.
           </p>
           <div className="text-black">
-            <Button size="xl" href={"#"} text={"Comenzar"} type="button" />
+            <Button size="xl" href={"#components"} scroll text={"Comenzar"} type="button" />
           </div>
         </div>
       </Container>

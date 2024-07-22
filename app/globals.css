@@ -38,6 +38,10 @@
   font-style: normal;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Blender Pro', sans-serif;
   @apply bg-black
@@ -63,4 +67,5 @@ body {
 .after-link-line:hover::after {
   width: 100%;
 }
+
 
