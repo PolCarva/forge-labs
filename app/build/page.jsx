@@ -1,3 +1,5 @@
+"use client"
+
 export default function Home() {
   return (
     <main className="max-h-[calc(100svh-104px)]">
