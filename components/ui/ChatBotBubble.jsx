@@ -9,7 +9,7 @@ const ChatBotBubble = () => {
   const close = () => {
     setIsChatOpen(false);
   };
-  
+
   return (
     <div className="fixed bottom-5 right-5">
       <div
@@ -21,6 +21,7 @@ const ChatBotBubble = () => {
         } rounded-md hover:scale-110 transition cursor-pointer p-5 bg-white shadow-lg border-2 border-black`}
       >
         <Image
+          alt="404 Not Found"
           src={"/assets/logo_small.svg"}
           className="w-full"
           width={43}

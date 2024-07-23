@@ -1,6 +1,7 @@
 "use client";
 
 import { prompts, replies } from "@/data/chatbotData";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 
 const ChatBot = ({ close }) => {
@@ -99,15 +100,17 @@ const ChatBot = ({ close }) => {
                     </span>
                   </div>
                 </div>
-                <img
+                <Image
                   src={
                     message.from === "bot"
                       ? "/assets/logo_small.svg"
-                      : "https://i.pravatar.cc/100?img=7"
+                      : "/assets/profile.webp"
                   }
-                  alt=""
+                  width={50}
+                  height={50}
+                  alt="Profile Pic"
                   className={`size-6 ${
-                    message.from === "bot" ? "order-1" : "order-2"
+                    message.from === "bot" ? "order-1" : "rounded-full order-2"
                   }`}
                 />
               </div>
@@ -117,10 +120,12 @@ const ChatBot = ({ close }) => {
             <div className="flex items-end">
               <div className="flex flex-col space-y-2 text-md leading-tight mx-2 order-2 items-start">
                 <div>
-                  <img
-                    src="https://support.signal.org/hc/article_attachments/360016877511/typing-animation-3x.gif"
+                  <Image
+                    src="/assets/tiping.gif"
                     alt="..."
                     className="w-16 ml-6"
+                    width={256}
+                    height={164}
                   />
                 </div>
               </div>

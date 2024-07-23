@@ -23,7 +23,7 @@ const Header = () => {
               <Button type="link" href="/" text={"Inicio"} />
             </li>
             <li>
-              <Button type="link" href="/build" text="Armar" />
+              <Button type="link" href="/build" text="Zona de Forjado" />
             </li>
             <li>
               <Button type="link" href="#" text={"Ayuda"} />

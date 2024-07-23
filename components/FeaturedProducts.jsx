@@ -1,12 +1,11 @@
 import React from "react";
 import Container from "./ui/Container";
 import HeadingTwo from "./ui/HeadingTwo";
-import Image from "next/image";
 import ProductCard from "./ui/ProductCard";
 
 const FeaturedProducts = () => {
   return (
-    <section className="text-black bg-white">
+    <section className="text-black bg-white py-16">
       <Container className={"pt-16"}>
         <HeadingTwo centered>Productos Destacados</HeadingTwo>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
