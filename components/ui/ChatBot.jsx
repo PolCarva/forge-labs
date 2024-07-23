@@ -64,7 +64,7 @@ const ChatBot = ({ close }) => {
     <div className="shadow-lg">
       <button
         onClick={close}
-        className="w-full bg-black h-10 flex items-center px-5 justify-end"
+        className="w-full border bg-black h-10 flex items-center px-5 justify-end"
       >
         {" "}
         <span className="h-1 w-8 block bg-white"></span>
