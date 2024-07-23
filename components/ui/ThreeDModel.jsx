@@ -5,8 +5,8 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three'; // Importa THREE
 
-const ThreeDModel = ({ modelPath }) => {
-  const gltf = useLoader(GLTFLoader, modelPath);
+const ThreeDModel = () => {
+  const gltf = useLoader(GLTFLoader, "/pc.glb");
 
   const CameraControls = () => {
     const { camera, scene } = useThree();
