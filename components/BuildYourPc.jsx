@@ -12,7 +12,7 @@ const BuildYourPc = () => {
         <HeadingTwo centered>Arma tu PC</HeadingTwo>
         <div className="grid grid-cols-12 gap-5 py-10">
           <div className="h-full col-span-4 max-h-[50vh]">
-            {/* <ThreeDModel  /> */}
+            <ThreeDModel modelPath={"/pc.glb"} />
           </div>
           <div className="grid grid-rows-4 grid-cols-2 gap-5 col-span-8 w-full h-full max-h-[50vh]">
             <ComponentSelect
