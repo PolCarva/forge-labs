@@ -3,10 +3,31 @@ import { Canvas, useThree } from '@react-three/fiber';
 import { useLoader } from '@react-three/fiber';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import { OrbitControls } from '@react-three/drei';
-import * as THREE from 'three'; // Importa THREE
+import * as THREE from 'three';
+import { Suspense, useState, useEffect } from 'react';
 
-const ThreeDModel = () => {
-  const gltf = useLoader(GLTFLoader, "/pc.glb");
+const ThreeDModel = ({ modelPath }) => {
+  const [gltf, setGltf] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadModel = async () => {
+      try {
+        if (!modelPath) {
+          throw new Error('Model path is undefined');
+        }
+        const loadedGltf = await new Promise((resolve, reject) => {
+          new GLTFLoader().load(modelPath, resolve, undefined, reject);
+        });
+        setGltf(loadedGltf);
+      } catch (err) {
+        setError(err);
+        console.error('Error loading GLTF model:', err);
+      }
+    };
+
+    loadModel();
+  }, [modelPath]);
 
   const CameraControls = () => {
     const { camera, scene } = useThree();
@@ -20,16 +41,18 @@ const ThreeDModel = () => {
     return null;
   };
 
+  if (error) return <div>Error loading model: {error.message}</div>;
+  if (!gltf) return <div>Loading...</div>;
+
   return (
     <Canvas className='rounded-xl ring-1 ring-white' style={{ background: '#1f2427' }}>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <CameraControls />
-      {gltf && <primitive object={gltf.scene} />}
-      <OrbitControls
-        minDistance={800}
-        maxDistance={1300}
-      />
+      <Suspense fallback={<div>Loading...</div>}>
+        <primitive object={gltf.scene} />
+      </Suspense>
+      <OrbitControls minDistance={800} maxDistance={1300} />
     </Canvas>
   );
 };
