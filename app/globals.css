@@ -67,5 +67,24 @@ body {
 .after-link-line:hover::after {
   width: 100%;
 }
+/* Estilo para el thumb de la scrollbar */
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #000; /* color azul */
+  border-radius: 9999px; /* completamente redondeado */
+}
 
+/* Estilo para la pista de la scrollbar */
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #cccccc; /* color azul más claro */
+}
+
+/* Ancho de la scrollbar */
+.scrollbar::-webkit-scrollbar {
+  width: 0.5rem; /* 2 (8px) */
+}
+
+/* Comportamiento de desplazamiento para dispositivos táctiles */
+.scrollbar {
+  -webkit-overflow-scrolling: touch;
+}
 

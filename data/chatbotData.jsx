@@ -1,0 +1,44 @@
+export const prompts = [
+    ["hola", "buenas", "buen día", "buenas tardes", "buenas noches"],
+    ["¿cómo estás?", "¿cómo va todo?", "¿qué tal?"],
+    ["¿qué estás haciendo?", "¿qué pasa?", "¿qué hay de nuevo?"],
+    ["¿cuál es tu recomendación para un procesador?", "¿qué procesador debería elegir?", "¿cómo elijo un buen procesador?"],
+    ["¿qué tipo de RAM necesito?", "¿cuánta RAM es recomendable?", "¿qué características debo buscar en la RAM?"],
+    ["¿cuál es la mejor tarjeta gráfica para juegos?", "¿qué tarjeta gráfica me recomiendas?", "¿necesito una tarjeta gráfica dedicada?"],
+    ["¿cómo elijo una placa base?", "¿qué debo considerar para la placa base?", "¿qué características son importantes en la placa base?"],
+    ["¿qué tipo de almacenamiento es mejor, SSD o HDD?", "¿debo usar SSD o HDD?", "¿cómo elijo entre SSD y HDD?"],
+    ["¿cómo armo la PC?", "¿cuál es el proceso para ensamblar una PC?", "¿qué pasos seguir para armar una PC?"],
+    ["¿cómo conectar los cables en la PC?", "¿dónde van los cables?", "¿cómo conectar los componentes internos?"],
+    ["¿cómo actualizo la BIOS?", "¿cuándo debo actualizar la BIOS?", "¿cuál es el proceso para actualizar la BIOS?"],
+    ["¿cómo instalo el sistema operativo?", "¿qué sistema operativo debería instalar?", "¿cómo configuro el sistema operativo?"],
+    ["¿qué fuentes de alimentación son recomendables?", "¿cómo elijo una fuente de alimentación?", "¿qué potencia necesito para la fuente de alimentación?"],
+    ["¿qué tipo de caja o gabinete debo usar?", "¿cómo elijo un buen gabinete?", "¿qué tamaño de gabinete es adecuado?"],
+    ["¿cómo hago el mantenimiento de la PC?", "¿qué debo limpiar y cómo?", "¿cómo mantengo mi PC en buen estado?"],
+    ["¿cuánto debería gastar en una PC?", "¿cuál es el presupuesto ideal para una PC?", "¿cómo balanceo calidad y precio?"],
+    ["¿hay alguna marca que recomiendes?", "¿qué marcas son buenas para componentes de PC?", "¿cuáles son las marcas más confiables?"],
+    ["¿cómo solucionar problemas de sobrecalentamiento?", "¿qué hacer si mi PC se calienta mucho?", "¿cómo mejorar la refrigeración de la PC?"],
+    ["¿qué hacer si mi PC no enciende?", "¿cómo diagnostico problemas de encendido?", "¿qué pasos seguir si la PC no arranca?"]
+  ];
+  
+  export const replies = [
+    ["¡Hola! ¿Cómo puedo ayudarte hoy?", "¡Buenas! ¿En qué puedo asistirte?", "¡Hola! ¿Qué necesitas?"],
+    ["Estoy bien, gracias. ¿Y tú?", "Todo bien, ¿cómo estás?", "Estoy aquí para ayudarte. ¿Qué necesitas?"],
+    ["Estoy aquí para ayudarte a armar tu PC. ¿Qué necesitas saber?", "No mucho, ¿qué te gustaría saber?", "¿Tienes alguna pregunta sobre el armado de PCs?"],
+    ["Para un buen procesador, considera uno con múltiples núcleos y alta velocidad. Los procesadores de Intel y AMD son opciones populares.", "Te recomiendo un procesador con al menos cuatro núcleos y una buena velocidad de reloj.", "Depende de tu uso. Para juegos, los procesadores AMD Ryzen y los Intel Core i7 son buenos."],
+    ["Para la RAM, busca al menos 16 GB para un buen rendimiento. Asegúrate de que sea compatible con tu placa base.", "Te recomiendo RAM DDR4 con una velocidad de al menos 3200 MHz.", "Dependiendo del uso, 16 GB es un buen punto de partida. Más para tareas exigentes."],
+    ["Para juegos, una tarjeta gráfica NVIDIA GeForce RTX o AMD Radeon RX es ideal. Depende de tu presupuesto y necesidades.", "Una tarjeta gráfica como la NVIDIA GTX 1660 o superior es buena para juegos modernos.", "Si planeas jugar a alta resolución, considera una tarjeta gráfica de gama alta."],
+    ["Elige una placa base que sea compatible con tu procesador y tenga suficiente conectividad para tus necesidades.", "Busca una placa base con buenas opciones de expansión y soporte para las características que necesitas.", "Asegúrate de que la placa base sea compatible con tu CPU y tenga las características que deseas."],
+    ["Un SSD es más rápido que un HDD y mejorará el rendimiento general de tu PC. Un HDD puede ser usado para almacenamiento adicional.", "Para el sistema operativo y aplicaciones, un SSD es ideal. Para almacenamiento de datos, un HDD puede ser útil.", "SSD para velocidad, HDD para capacidad de almacenamiento. Idealmente, usa ambos."],
+    ["El proceso general es colocar la placa base en el gabinete, instalar el procesador, la RAM y la tarjeta gráfica, y conectar todos los cables.", "Sigue el manual de tu placa base y componentes. Empieza por la placa base, luego instala el procesador y la RAM, y finalmente los cables y periféricos.", "Ensamblar una PC implica colocar los componentes en el gabinete y conectar todo correctamente. Aquí tienes una guía paso a paso."],
+    ["Consulta el manual de tu placa base para ver dónde van los cables. Generalmente, hay conectores etiquetados para cada tipo de cable.", "Los cables de la fuente de alimentación deben ir a la placa base, GPU y almacenamiento. Sigue el manual para las conexiones exactas.", "Cada cable tiene un conector específico. Asegúrate de conectarlos en los puertos correctos según el manual de la placa base."],
+    ["Para actualizar la BIOS, descarga la última versión desde el sitio web del fabricante y sigue las instrucciones específicas para tu placa base.", "Consulta el manual de tu placa base para el procedimiento de actualización de la BIOS. Es un proceso delicado, así que sigue las instrucciones cuidadosamente.", "Actualizar la BIOS puede mejorar la compatibilidad y el rendimiento. Asegúrate de hacerlo correctamente siguiendo las indicaciones del fabricante."],
+    ["Puedes instalar el sistema operativo desde un USB o DVD. Sigue las instrucciones en pantalla para completar la instalación.", "Elige un sistema operativo adecuado para tus necesidades, como Windows o Linux. Instálalo desde un medio de instalación y sigue el asistente.", "Para instalar el sistema operativo, conecta el medio de instalación y arranca desde él. Sigue los pasos para completar la instalación."],
+    ["Busca una fuente de alimentación con suficiente potencia para tus componentes. Una fuente de 80 Plus es más eficiente y confiable.", "La potencia depende de tus componentes. Usa una fuente de alimentación con certificación 80 Plus y suficiente capacidad para tu configuración.", "Para elegir una fuente de alimentación, calcula el consumo total de tus componentes y selecciona una con un poco de margen adicional."],
+    ["Elige un gabinete que se adapte a tus componentes y permita una buena ventilación. Considera el tamaño y el flujo de aire.", "El tamaño del gabinete debe ser compatible con tu placa base y otros componentes. Asegúrate de que tenga suficiente espacio para todo.", "Un buen gabinete debe tener buen flujo de aire y ser lo suficientemente grande para tus componentes. Considera el diseño y la facilidad de montaje."],
+    ["Limpia el polvo regularmente y asegúrate de que los ventiladores funcionen bien. Revisa las conexiones y el estado de los componentes.", "Para el mantenimiento, limpia los filtros y el interior del gabinete. Verifica que los ventiladores estén funcionando correctamente.", "El mantenimiento incluye limpiar el polvo, revisar las conexiones y asegurarse de que todos los componentes estén en buen estado."],
+    ["El presupuesto depende de lo que necesites. Para una buena PC de gama media, considera alrededor de $1000-$1500. Ajusta según tus necesidades.", "Determina el uso que le darás a la PC y ajusta tu presupuesto en consecuencia. Para juegos, una inversión de $1200-$2000 es común.", "Un presupuesto de $800-$1500 es adecuado para una PC de buen rendimiento. Ajusta según tus necesidades específicas."],
+    ["Marcas como ASUS, MSI y Gigabyte son confiables para componentes de PC. También puedes considerar marcas como Corsair y EVGA.", "Las marcas recomendadas incluyen ASUS, MSI y Gigabyte para placas base y tarjetas gráficas, y Corsair para fuentes de alimentación y RAM.", "Considera marcas conocidas como Intel, AMD, NVIDIA, ASUS y Corsair para asegurar calidad y soporte."],
+    ["Asegúrate de que los ventiladores y disipadores estén limpios y funcionando correctamente. También verifica el flujo de aire en el gabinete.", "Mejora la ventilación añadiendo más ventiladores o usando disipadores más eficientes. Asegúrate de que el flujo de aire sea adecuado.", "Para solucionar problemas de sobrecalentamiento, revisa la instalación de los ventiladores y limpia el polvo acumulado."],
+    ["Verifica que todos los cables estén conectados correctamente y que el suministro de energía sea adecuado. Prueba con componentes básicos si es necesario.", "Si tu PC no enciende, revisa las conexiones de los cables y los componentes internos. Asegúrate de que la fuente de alimentación esté funcionando.", "Para diagnosticar problemas de encendido, prueba con el mínimo de componentes conectados y revisa las conexiones y el estado del hardware."]
+  ];
+  
