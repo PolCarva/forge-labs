@@ -42,7 +42,7 @@ const Modal = () => {
                   height={300}
                   src={component.IMG}
                   alt={component.Titulo}
-                  className="size-16 rounded inline-block mr-2"
+                  className="size-16 bg-white object-contain rounded inline-block mr-2"
                 />
                 <p>
                   {component.Titulo} - <span className="font-bold">${component.Precio}</span>

@@ -70,7 +70,7 @@ const ComponentSelect = ({
       <div className="flex w-full items-center justify-between">
         <div className="flex flex-col">
           <h4 className="text-2xl font-bold h-[0.9em] capitalize">{title}</h4>
-          <p>{desc}</p>
+          <p className="leading-[0.85em] mt-2">{desc}</p>
         </div>
         <p className="text-lg font-bold">${price.toFixed(2)}</p>
       </div>
