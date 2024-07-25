@@ -1,12 +1,45 @@
+// components/ComponentSelect.js
+import React, { useContext } from "react";
 import Image from "next/image";
-import React from "react";
+import ModalContext from "@/context/ModalContext";
 
-const ComponentSelect = ({ src, title, desc, isActive = true }) => {
+const ComponentSelect = ({
+  src,
+  title,
+  desc,
+  endpoint,
+  updateSelection,
+  componentType,
+  isActive,
+  price,
+}) => {
+  const { openModal } = useContext(ModalContext);
+  const handleClick = () => {
+    openModal({
+      title,
+      endpoint,
+      updateSelection: (component) => updateSelection(componentType, component),
+    });
+  };
+
+  const extractDimendionsFromURL = (url) => {
+
+    const dimensions = url.match(/(\d{2,4})x(\d{2,4})/);
+    if (dimensions) {
+      return {
+        width: dimensions[1],
+        height: dimensions[2],
+      };
+    }
+    return null;
+  };
+
   return (
     <div
+      onClick={handleClick}
       className={`${
         isActive && "ring-1"
-      } cursor-poiner relative w-full text-white ring-white rounded-lg group bg-white/10 flex gap-5 p-3`}
+      } cursor-pointer relative w-full text-white ring-white rounded-lg group bg-white/10 hover:bg-white/15 transition flex gap-5 p-3`}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +49,7 @@ const ComponentSelect = ({ src, title, desc, isActive = true }) => {
         stroke="currentColor"
         className={`${
           isActive ? "block" : "hidden"
-        } size-6 absolute top-1 right-1`}
+        } size-4 absolute top-1 right-1`}
       >
         <path
           strokeLinecap="round"
@@ -28,15 +61,18 @@ const ComponentSelect = ({ src, title, desc, isActive = true }) => {
       <div className="p-2 bg-white rounded-lg aspect-square grid place-content-center">
         <Image
           src={src}
-          width={100}
-          height={58}
+          width={extractDimendionsFromURL(src)?.width || 300}
+          height={extractDimendionsFromURL(src)?.height || 300}
           alt={title}
-          className="object-cover"
+          className="max-h-full"
         />
       </div>
-      <div>
-        <h4 className="text-2xl font-bold capitalize">{title}</h4>
-        <p>{desc}</p>
+      <div className="flex w-full items-center justify-between">
+        <div className="flex flex-col">
+          <h4 className="text-2xl font-bold h-[0.9em] capitalize">{title}</h4>
+          <p>{desc}</p>
+        </div>
+        <p className="text-lg font-bold">${price.toFixed(2)}</p>
       </div>
     </div>
   );

@@ -76,6 +76,8 @@ body {
 /* Estilo para la pista de la scrollbar */
 .scrollbar::-webkit-scrollbar-track {
   background-color: #cccccc; /* color azul más claro */
+  border-radius: 9999px; /* completamente redondeado */
+
 }
 
 /* Ancho de la scrollbar */
