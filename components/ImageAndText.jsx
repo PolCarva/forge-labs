@@ -14,10 +14,12 @@ const ImageAndText = () => {
           alt="Working Man"
         />
         <div className="max-w-lg">
-          <HeadingTwo>Lorem Ipsum Dolor sit amet.</HeadingTwo>
+          <HeadingTwo>Asistente de IA Integrado</HeadingTwo>
           <p className="text-2xl mt-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi tempor
-            consectetur adipiscing elit morbi tempor.
+            Forge Labs cuenta con una IA integrada que resuelve todas tus dudas.
+            Desde recomendaciones de componentes hasta solución de problemas
+            técnicos, nuestra IA está aquí para ayudarte en cada paso del
+            proceso.
           </p>
         </div>
       </Container>

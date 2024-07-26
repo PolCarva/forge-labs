@@ -5,12 +5,14 @@ import HeadingTwo from "./ui/HeadingTwo";
 const Spacer = () => {
   return (
     <section className='bg-[url("/assets/spacer.png")] bg-cover'>
-      <Container className="min-h-96 text-white flex items-center">
+      <Container className="min-h-96 py-32 text-white flex items-center">
         <div>
-          <HeadingTwo>Lorem Ipsum Dolor sit amet.</HeadingTwo>
+          <HeadingTwo className="max-w-3xl">Interfaz 3D Intuitiva</HeadingTwo>
           <p className="text-2xl mt-5 max-w-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit morbi tempor
-            consectetur adipiscing elit morbi tempor.
+            Nuestra interfaz 3D hace que la experiencia de armar una PC sea
+            sencilla y fácil de entender. Visualiza cada componente y su
+            ubicación exacta en tu sistema para un ensamblaje sin
+            complicaciones.
           </p>
         </div>
       </Container>
