@@ -9,6 +9,32 @@ import ThreeDModel from "./ui/ThreeDModel";
 import { ModalProvider } from "@/context/ModalContext";
 import Modal from "./ui/Modal";
 
+const components = [ {
+  type: "Placa Madre",
+  endpoint: "motherboards"
+}, {
+  type: "CPU",
+  endpoint: "procesadores"
+}, {
+  type: "GPU",
+  endpoint: "tarjetas_de_video"
+}, {
+  type: "Cooler",
+  endpoint: "cooler"
+}, {
+  type: "Fuente de Poder",
+  endpoint: "motherboards"
+}, {
+  type: "RAM",
+  endpoint: "memorias"
+}, {
+  type: "Almacenamiento",
+  endpoint: "almacenamiento"
+}, {
+  type: "Gabinete",
+  endpoint: "gabinetes"
+}];
+
 const BuildYourPc = () => {
   const [selectedComponents, setSelectedComponents] = useState({});
   const [totalCost, setTotalCost] = useState(0);
@@ -32,20 +58,17 @@ const BuildYourPc = () => {
           </div>
           <ModalProvider>
             <div className="grid grid-rows-4 grid-cols-2 gap-5 col-span-8 w-full h-full max-h-[50vh]">
-              {[
-                "Placa Madre", "CPU", "GPU", "Cooler",
-                "Fuente de Poder", "RAM", "Almacenamiento", "Gabinete"
-              ].map((type, index) => (
+              {components.map((component) => (
                 <ComponentSelect
-                  key={type}
-                  src={selectedComponents[type]?.IMG ||"/assets/component.png"}
-                  price={selectedComponents[type]?.Precio || 0}
-                  title={type}
-                  desc={(selectedComponents[type]?.Titulo || "Seleccione componente")}
-                  endpoint={type.toLowerCase()}
+                  key={component.type}
+                  src={selectedComponents[component.type]?.IMG ||"/assets/component.png"}
+                  price={selectedComponents[component.type]?.Precio || 0}
+                  title={component.type}
+                  desc={(selectedComponents[component.type]?.Titulo || "Seleccione componente")}
+                  endpoint={component.endpoint}
                   updateSelection={updateComponentSelection}
-                  componentType={type}
-                  isActive={!!selectedComponents[type]}
+                  componentType={component.type}
+                  isActive={!!selectedComponents[component.type]}
                 />
               ))}
             </div>
