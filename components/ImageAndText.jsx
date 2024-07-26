@@ -8,10 +8,11 @@ const ImageAndText = () => {
     <section className="bg-white text-black  h-[80vh]">
       <Container className="flex h-full justify-between gap-40 items-center">
         <Image
-          src={"/assets/working_man.png"}
-          width={489.54}
-          height={382.12}
+          src={"/assets/ilustracion_rcpu_pesas_fans.png"}
+          width={1920}
+          height={1920}
           alt="Working Man"
+          className="h-full object-cover"
         />
         <div className="max-w-lg">
           <HeadingTwo>Asistente de IA Integrado</HeadingTwo>

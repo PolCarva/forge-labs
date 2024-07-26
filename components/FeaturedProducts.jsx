@@ -10,23 +10,25 @@ const FeaturedProducts = () => {
         <HeadingTwo centered>Encuentra lo que necesitas</HeadingTwo>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
           <ProductCard
-            title={"Procesador Intel Core i9-11900K"}
+            title={"Experimenta"}
+            isInverted={true}
             text={
-              "Descubre el poder y la velocidad con el procesador Intel Core i9-11900K. Con 8 núcleos y 16 hilos, este procesador de última generación está diseñado para ofrecer un rendimiento excepcional en tareas multitarea y juegos de alta demanda. Perfecto para usuarios que buscan la máxima potencia en sus sistemas."
+              "Descubre el potencial y las limitaciones de tus componentes con nuestra herramienta de benchmarking."
             }
-            src={"/assets/working_in_pc_parts.png"}
+            src={"/assets/ilustracion_ciencia_pendrive_posta.png"}
+          />
+
+          <ProductCard
+            title={"Relájate"}
+            text={
+              "Despreocúpate de los problemas que conlleva la construcción de una PC. Nuestro asistente de IA te guiará en cada paso del proceso."
+            }
+            src={"/assets/ilustracion_relax_ssd.png"}
           />
           <ProductCard
-            title={"Tarjeta Gráfica NVIDIA GeForce RTX 3080"}
+            title={"Comprende"}
             text={
-              "Eleva tu experiencia de juego y creación de contenido con la tarjeta gráfica NVIDIA GeForce RTX 3080. Equipada con la arquitectura Ampere de NVIDIA, esta tarjeta ofrece un rendimiento sin precedentes, trazado de rayos en tiempo real y capacidades de inteligencia artificial avanzadas. Ideal para gamers y profesionales del diseño gráfico."
-            }
-            src={"/assets/working_in_pc_parts.png"}
-          />
-          <ProductCard
-            title={"Unidad de Estado Sólido Samsung 970 EVO Plus"}
-            text={
-              "Acelera tu sistema con la unidad de estado sólido Samsung 970 EVO Plus. Con velocidades de lectura y escritura secuenciales de hasta 3,500 MB/s y 3,300 MB/s respectivamente, esta SSD garantiza tiempos de carga ultrarrápidos y una experiencia de usuario fluida. Perfecta para usuarios que necesitan almacenamiento rápido y fiable."
+              "Aprende sobre cada componente y su función en tu sistema. Nuestra interfaz 3D te mostrará cada detalle de tu PC."
             }
             src={"/assets/working_in_pc_parts.png"}
           />
