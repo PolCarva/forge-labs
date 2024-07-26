@@ -20,7 +20,7 @@ const components = [ {
   endpoint: "tarjetas_de_video"
 }, {
   type: "Cooler",
-  endpoint: "cooler"
+  endpoint: "coolers"
 }, {
   type: "Fuente de Poder",
   endpoint: "motherboards"
